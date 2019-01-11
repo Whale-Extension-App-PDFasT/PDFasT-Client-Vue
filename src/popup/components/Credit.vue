@@ -229,7 +229,7 @@ Icon made by Google from www.flaticon.com
 </pre>
             </div>
             <div class="credit_footer">
-                <button type="button" id="creditCancel" class="btn btn-default" v-on:click="close">닫기</button>                
+                <button type="button" id="creditCancel" class="btn btn-default" v-on:click="close" i18n-content="CLOSE"></button>                
             </div>
         </div>
     </div>

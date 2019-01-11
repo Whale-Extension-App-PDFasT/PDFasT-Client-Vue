@@ -5,8 +5,8 @@
         <div role="tabpanel">
             <!-- Nav tabs -->
             <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active"><a href="#recent" aria-controls="recent" role="tab" data-toggle="tab" v-on:click="favBtnOn">최근항목</a></li>
-                <li role="presentation"><a href="#favorite" aria-controls="favorite" role="tab" data-toggle="tab" v-on:click="favBtnOff">즐겨찾기</a></li>
+                <li role="presentation" class="active"><a href="#recent" aria-controls="recent" role="tab" data-toggle="tab" v-on:click="favBtnOn" i18n-content="MENU_RECENT"></a></li>
+                <li role="presentation"><a href="#favorite" aria-controls="favorite" role="tab" data-toggle="tab" v-on:click="favBtnOff" i18n-content="MENU_FAVORITE"></a></li>
             </ul>
 
             <!-- Tab panes -->
@@ -112,7 +112,7 @@ export default {
             chrome.tabs.query(queryInfo, function(tabs) {
                 EventBus.$emit('FavulEmpty');
                 if(tabs.length == 0){
-                    EventBus.$emit('FavulAddTab', '<span style="position:absolute;top:100px;text-align:center">현재 브라우저에 PDF가 없습니다.</span>');
+                    EventBus.$emit('FavulAddTab', `<span style="position:absolute;top:100px;text-align:left">${whale.i18n.getMessage('WEB_POPUP_CONTENT')}</span>`);
                 }
                 for(let i in tabs){
                     EventBus.$emit('FavulAddTab', `<li class="pop_body_li" data-url="${tabs[i]['url']}">${tabs[i]['title']}</li>`);

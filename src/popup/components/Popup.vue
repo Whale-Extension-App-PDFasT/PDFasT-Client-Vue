@@ -2,7 +2,7 @@
     <div class="popup_back modal" v-bind:style="{display: popupDisplay}">
         <div class="popup" id="popuphide">
             <div class="pop_header">
-                변환할 탭 목록
+                {{WEB_POPUP_TITLE}}
                 <img src="/img/refresh.png" id="refresh" v-on:click="refresh"/>
             </div>
 
@@ -12,8 +12,8 @@
             </div>
 
             <div class="pop_footer">
-                <button type="button" id="popConvert" class="btn btn-default" v-on:click="convert">변환</button>
-                <button type="button" id="popCancel" class="btn btn-default" v-on:click="cancel">취소</button>
+                <button type="button" id="popConvert" class="btn btn-default" v-on:click="convert" i18n-content="WEB_POPUP_CONVERT"></button>
+                <button type="button" id="popCancel" class="btn btn-default" v-on:click="cancel" i18n-content="WEB_POPUP_CANCEL"></button>
             </div>
         </div>     
     </div>
@@ -49,6 +49,7 @@ export default {
       return{
           popupDisplay: 'none',
           ulContents: '',
+          WEB_POPUP_TITLE: whale.i18n.getMessage('WEB_POPUP_TITLE')
       }
   },
   created(){
@@ -108,7 +109,7 @@ export default {
         chrome.tabs.query(queryInfo, function(tabs) {
             EventBus.$emit('ulEmpty');
             if(tabs.length == 0){
-                EventBus.$emit('ulAddTab', '<span style="position:absolute;top:100px;text-align:center">현재 브라우저에 PDF가 없습니다.</span>');
+                EventBus.$emit('ulAddTab', `<span style="position:absolute;top:100px;text-align:left">${whale.i18n.getMessage('FAVORITE_POPUP_CONTENT')}</span>`);
             }
             for(let i in tabs){
                 EventBus.$emit('ulAddTab', `<li class="pop_body_li" data-url="${tabs[i]['url']}">${tabs[i]['title']}</li>`);

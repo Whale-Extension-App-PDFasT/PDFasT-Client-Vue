@@ -1,7 +1,7 @@
 <template>
     <div class="hoverLamp2_back" id="hoverLamp_back">
         <div class="hoverLamp2" id="hoverLamp" v-on:click="closeAlltabs"></div>
-        <span>변환된 모든탭<br/>종료</span>
+        <span i18n-content="BULB_HOVER">변환된 모든탭<br/>종료</span>
     </div>
 </template>
 

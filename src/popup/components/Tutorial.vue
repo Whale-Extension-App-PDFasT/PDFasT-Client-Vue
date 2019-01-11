@@ -4,7 +4,7 @@
             <iframe width="256px" height="144px" src="https://www.youtube.com/embed/mr2Llu8ZKeU" frameborder="2" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <span v-on:click="close">ⓧ</span>
             <img src="/img/home_btn.png"/>
-            <div id="info_home_txt">가이드 영상 닫고 바로시작하기!</div>
+            <div id="info_home_txt" i18n-content="HELP_CLOSE"></div>
         </div>
     </div>
 </template>

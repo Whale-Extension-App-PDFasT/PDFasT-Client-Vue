@@ -1,6 +1,6 @@
 <template>
   <div id="root">
-    <div id="popup_youtube" v-on:click="youtube"><span>PDFasT 사용법 영상</span><span>▶</span></div>
+    <div id="popup_youtube" v-on:click="youtube"><span i18n-content="AD_YOUTUBE"></span><span>▶</span></div>
     <Popup/>
     <Popup_favorite/>
     <div class="col-md-12 mainframe" id="mainFrame">
@@ -42,6 +42,14 @@ export default {
     Popup,
     Popup_favorite,
     Tutorial
+  },
+  mounted () {
+    require('./js/i18n-contents.js')
+    if (whale.i18n.getMessage('@@ui_locale').indexOf('en') === 0) {
+      document.querySelector('#file_title').style.fontSize = '15px';
+      document.querySelector('#popup_youtube span').innerHTML = 'PDFasT Guide Youtube';
+      document.querySelector('#popup_youtube span').style.fontSize = '11px';
+    }
   },
   methods: {
     home () {

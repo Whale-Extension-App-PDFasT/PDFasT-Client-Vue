@@ -23,7 +23,7 @@ export default {
             chrome.tabs.query(queryInfo, function(tabs) {
                 EventBus.$emit('ulEmpty');
                 if(tabs.length == 0){
-                    EventBus.$emit('ulAddTab', '<span style="position:absolute;top:100px;text-align:center">현재 브라우저에 PDF가 없습니다.</span>');
+                    EventBus.$emit('ulAddTab', `<span style="position:absolute;top:100px;text-align:left">${whale.i18n.getMessage('FAVORITE_POPUP_CONTENT')}</span>`);
                 }
                 for(let i in tabs){
                     EventBus.$emit('ulAddTab', `<li class="pop_body_li" data-url="${tabs[i]['url']}">${tabs[i]['title']}</li>`);

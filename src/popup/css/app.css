@@ -1092,6 +1092,9 @@ img[src="/img/plus.png"]:hover {
     font-size: 16px;
 }
 
+.pop_favorite_body span{
+    text-align: left;
+}
 .pop_favorite_body ul {
     list-style: none;
 
@@ -1261,6 +1264,7 @@ img[src="/img/plus.png"]:hover {
     box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
+    border-bottom: 0px;
 }
 
 /* =========================================== 도움말 =========================================== */
@@ -1639,3 +1643,4 @@ img[src='/img/pdfast6.png'], #title{
     height: 16px;
     line-height: 15px; 
 }
+

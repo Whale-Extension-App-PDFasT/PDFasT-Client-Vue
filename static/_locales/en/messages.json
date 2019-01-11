@@ -1,0 +1,59 @@
+{
+  "APP_NAME": {
+    "message": "PDFasT"
+  },
+  "APP_DESCRIPTION": {
+    "message": "An Extension App that can be quick search, translation, memo, etc. in PDF"
+  },
+  "AD_YOUTUBE_TEXT": {
+    "message": "PDFasT Guide Youtube"
+  },
+  "HELP_CLOSE": {
+    "message": "Close the Guide and Start it right away!"
+  },
+  "GUIDE_INIT": {
+    "message": "Click on the icon at the bottom!"
+  },
+  "GUIDE_WEB": {
+    "message": "Converting PDF-files from Internet..."
+  },
+  "GUIDE_LOCAL": {
+    "message": "Converting PDF-files from my computer..."
+  },
+  "BULB_HOVER": {
+    "message": "Close all <br/>converted tabs"
+  },
+  "MENU_RECENT": {
+    "message": "Recent"
+  },
+  "MENU_FAVORITE": {
+    "message": "Favorite"
+  },
+  "CLOSE": {
+    "message": "Close"
+  },
+  "WEB_POPUP_TITLE": {
+    "message": "List of tabs to convert"
+  },
+  "WEB_POPUP_CONTENT": {
+    "message": "Your browser does not currently have a PDF."
+  },
+  "WEB_POPUP_CONVERT": {
+    "message": "CONVERT"
+  },
+  "WEB_POPUP_CANCEL": {
+    "message": "CANCEL"
+  },
+  "FAVORITE_POPUP_TITLE": {
+    "message": "<span>FAVORITE</span> TAB LIST"
+  },
+  "FAVORITE_POPUP_CONTENT": {
+    "message": "Your browser does not currently have a PDF."
+  },
+  "FAVORITE_POPUP_ADD": {
+    "message": "ADD"
+  },
+  "FAVORITE_POPUP_CANCEL": {
+    "message": "CANCEL"
+  }
+}

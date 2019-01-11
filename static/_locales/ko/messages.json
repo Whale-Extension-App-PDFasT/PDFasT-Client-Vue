@@ -1,0 +1,59 @@
+{
+    "APP_NAME": {
+      "message": "PDFasT"
+    },
+    "APP_DESCRIPTION": {
+      "message": "PDF에서도 번역,메모,검색 등 퀵서치가 가능한 확장앱"
+    },
+    "AD_YOUTUBE": {
+      "message": "PDFasT 사용법 영상"
+    },
+    "HELP_CLOSE": {
+      "message": "가이드 영상 닫고 바로 시작하기!"
+    },
+    "GUIDE_INIT": {
+      "message": "하단에 아이콘을 클릭해보세요!"
+    },
+    "GUIDE_WEB": {
+      "message": "인터넷에서 PDF 변환 중..."
+    },
+    "GUIDE_LOCAL": {
+      "message": "내 컴퓨터에서 PDF 변환 중..."
+    },
+    "BULB_HOVER": {
+      "message": "변환된 모든탭<br/>닫기"
+    },
+    "MENU_RECENT": {
+      "message": "최근항목"
+    },
+    "MENU_FAVORITE": {
+      "message": "즐겨찾기"
+    },
+    "CLOSE": {
+      "message": "닫기"
+    },
+    "WEB_POPUP_TITLE": {
+      "message": "변환할 탭 목록"
+    },
+    "WEB_POPUP_CONTENT": {
+      "message": "현재 브라우저에 PDF가 없습니다."
+    },
+    "WEB_POPUP_CONVERT": {
+      "message": "변환"
+    },
+    "WEB_POPUP_CANCEL": {
+      "message": "취소"
+    },
+    "FAVORITE_POPUP_TITLE": {
+      "message": "<span>즐겨찾기</span> 추가할 탭 목록"
+    },
+    "FAVORITE_POPUP_CONTENT": {
+      "message": "현재 브라우저에 PDF가 없습니다."
+    },
+    "FAVORITE_POPUP_ADD": {
+      "message": "추가"
+    },
+    "FAVORITE_POPUP_CANCEL": {
+      "message": "취소"
+    }
+  }

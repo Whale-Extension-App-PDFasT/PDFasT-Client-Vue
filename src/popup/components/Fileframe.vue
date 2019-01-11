@@ -14,7 +14,7 @@ export default {
     name: 'Fileframe',
     data(){
         return{
-            title: '하단에 아이콘을 클릭해보세요!',
+            title: whale.i18n.getMessage('GUIDE_INIT'),
             styleDefault: {
                 color: 'black',
                 margin: '10px auto',
@@ -42,7 +42,7 @@ export default {
                 verticalAlign: 'middle',
                 width: 'calc(100% - 50px )',
                 height: '20px',
-                borderBottom: '4px groove #C4C2C0',
+                borderBottom: '0px',
                 borderTop: '1px solid #C4C2C0',
                 fontFamily: 'Moebius_Bold_kor',
                 fontSize: '20px',
@@ -71,7 +71,7 @@ export default {
                 verticalAlign: 'middle',
                 width: 'calc(100% - 50px )',
                 height: '20px',
-                borderBottom: '4px groove #C4C2C0',
+                borderBottom: '0px',
                 borderTop: '1px solid #C4C2C0',
                 fontFamily: 'Moebius_Bold_kor',
                 fontSize: '20px',
@@ -102,17 +102,17 @@ export default {
         EventBus.$on('changeFolderStyle', () => {
             this.styleOut = this.styleFolderOut;
             this.styleIn = this.styleFolder;
-            this.title = "내컴퓨터에서 PDF 변환 중...";
+            this.title = whale.i18n.getMessage('GUIDE_LOCAL');
         });
         EventBus.$on('changeWebStyle', () => {
             this.styleOut = this.styleWebOut;
             this.styleIn = this.styleWeb;
-            this.title = "인터넷에서 PDF 변환 중...";
+            this.title = whale.i18n.getMessage('GUIDE_WEB');
         });
         EventBus.$on('changeDefaultStyle', () => {
             this.styleOut = this.styleDefaultOut;
             this.styleIn = this.styleDefault;
-            this.title = "하단에 아이콘을 클릭해보세요!";
+            this.title = whale.i18n.getMessage('GUIDE_INIT');
         });
         EventBus.$on('changeTitle', (val) => {
             this.title = val;

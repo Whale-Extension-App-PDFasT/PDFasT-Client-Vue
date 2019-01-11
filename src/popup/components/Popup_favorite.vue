@@ -2,7 +2,7 @@
     <div class="popup_favorite_back modal" v-bind:style="{display: popupDisplay}">
         <div class="popup_favorite">
             <div class="pop_favorite_header">
-                <span>즐겨찾기</span> 추가할 탭 목록
+                <span v-html="FAVORITE_POPUP_TITLE"></span>
                 <img src="/img/refresh.png" id="favorite_refresh" v-on:click="refresh"/>
             </div>
 
@@ -12,8 +12,8 @@
             </div>
 
             <div class="pop_favorite_footer">
-                <button type="button" id="pop_favoriteConvert" class="btn btn-default" v-on:click="addFav">추가</button>
-                <button type="button" id="pop_favoriteCancel" class="btn btn-default" v-on:click="cancel">취소</button>
+                <button type="button" id="pop_favoriteConvert" class="btn btn-default" v-on:click="addFav" i18n-content="FAVORITE_POPUP_ADD"></button>
+                <button type="button" id="pop_favoriteCancel" class="btn btn-default" v-on:click="cancel" i18n-content="FAVORITE_POPUP_CANCEL"></button>
             </div>
         </div>
     </div>
@@ -49,9 +49,10 @@ export default {
       return{
           popupDisplay: 'none',
           ulContents: '',
+          FAVORITE_POPUP_TITLE: whale.i18n.getMessage('FAVORITE_POPUP_TITLE')
       }
   },
-  created(){
+  created () {
     EventBus.$on('showPopupFav', () => {
         this.popupDisplay = 'block';
     });
@@ -94,7 +95,7 @@ export default {
         chrome.tabs.query(queryInfo, function(tabs) {
             EventBus.$emit('ulEmpty');
             if(tabs.length == 0){
-                EventBus.$emit('ulAddTab', '<span style="position:absolute;top:100px;text-align:center">현재 브라우저에 PDF가 없습니다.</span>');
+                EventBus.$emit('ulAddTab', `<span style="position:absolute;top:100px;text-align:left">${whale.i18n.getMessage('WEB_POPUP_CONTENT')}</span>`);
             }
             for(let i in tabs){
                 EventBus.$emit('ulAddTab', `<li class="pop_body_li" data-url="${tabs[i]['url']}">${tabs[i]['title']}</li>`);
