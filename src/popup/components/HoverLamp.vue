@@ -12,7 +12,7 @@ export default {
   name: 'HoverLamp',
   methods: {
     closeAlltabs(){
-        if($('.lamp')[0].getAttribute('src') != '/img/lamp_off2.png'){
+        if($('.lamp')[0].getAttribute('src') != '/img/lamp_off.png'){
             chrome.tabs.getAllInWindow(null, function(tabs){
                 const str = "pdfast.run.goorm.io"; 
                 
@@ -33,6 +33,16 @@ export default {
             
         }
     }
+  },
+  mounted () {
+      let hoverLampEl = document.querySelector('.hoverLamp2');
+      let lamp = document.querySelector('.lamp');
+      hoverLampEl.addEventListener('mouseover', (event) => {
+          lamp.setAttribute('src', '/img/lamp_on.png');
+      });
+      hoverLampEl.addEventListener('mouseout', (event) => {
+          lamp.setAttribute('src', '/img/lamp_off.png');
+      });
   }
 }
 </script>

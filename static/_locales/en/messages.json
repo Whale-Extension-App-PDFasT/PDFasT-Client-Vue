@@ -3,16 +3,16 @@
     "message": "PDFasT"
   },
   "APP_DESCRIPTION": {
-    "message": "An Extension App that can be quick search, translation, memo, etc. in PDF"
+    "message": "An Extension App that can be quickly searched, translated, noted down and etc. in PDF"
   },
   "AD_YOUTUBE_TEXT": {
-    "message": "PDFasT Guide Youtube"
+    "message": "PDFasT Guide Video"
   },
   "HELP_CLOSE": {
     "message": "Close the Guide and Start it right away!"
   },
   "GUIDE_INIT": {
-    "message": "Click on the icon at the bottom!"
+    "message": "Click the icon at the bottom!"
   },
   "GUIDE_WEB": {
     "message": "Converting PDF-files from Internet..."
@@ -36,7 +36,7 @@
     "message": "List of tabs to convert"
   },
   "WEB_POPUP_CONTENT": {
-    "message": "Your browser does not currently have a PDF."
+    "message": "There are no PDF files in the current browser"
   },
   "WEB_POPUP_CONVERT": {
     "message": "CONVERT"
@@ -45,10 +45,10 @@
     "message": "CANCEL"
   },
   "FAVORITE_POPUP_TITLE": {
-    "message": "<span>FAVORITE</span> TAB LIST"
+    "message": "<span>FAVORITE</span> List of tabs to add"
   },
   "FAVORITE_POPUP_CONTENT": {
-    "message": "Your browser does not currently have a PDF."
+    "message": "There are no PDF files in the current browser"
   },
   "FAVORITE_POPUP_ADD": {
     "message": "ADD"

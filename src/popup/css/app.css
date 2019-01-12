@@ -6,13 +6,10 @@
     --layout-zindex: 1;
 }
 @font-face {
-    font-family: 'Moebius_Bold_kor';
-    src: url("/fonts/Moebius_Bold_kor.ttf");
+    font-family: 'DoHyeon-Regular';
+    src: url("/fonts/DoHyeon-Regular.ttf");
 }
-@font-face {
-    font-family: 'Moebius_Regular_kor';
-    src: url("/fonts/Moebius_Regular_kor.ttf");
-}
+
 body {
     margin: 0;
     padding: 0;
@@ -48,7 +45,7 @@ body {
 }
 
 #innerfileframe p {
-    font-family: 'Moebius_Bold_kor';
+    font-family: 'DoHyeon-Regular', sans-serif;
     font-size: 20px;
     display: table-cell;
     vertical-align: bottom;
@@ -108,7 +105,7 @@ footer {
     background-color: #ececec;
     z-index: 10;
     text-align: center;
-    font-family: Moebius_Bold_kor;
+    font-family: 'DoHyeon-Regular', sans-serif;
     color: lightslategray;
 }
 footer span {
@@ -124,7 +121,7 @@ footer span {
     font-size: 50px;
     text-align: center;
     color: black;
-    font-family: Moebius_Bold_kor;
+    font-family: 'DoHyeon-Regular', sans-serif;
     text-decoration: none;
     border-bottom: 3px solid black;
 }
@@ -376,7 +373,7 @@ a.nav-link {
 }
 
 .introduceTab p {
-    font-family: Moebius_Regular_kor;
+    font-family: 'DoHyeon-Regular', sans-serif;
     font-size: 12px;
     color: rgba(0, 0, 0, 0.5);
     text-align: center;
@@ -405,7 +402,7 @@ a.nav-link {
 
 #recent ul li span {
     display: table-cell;
-    font-family: Moebius_Bold_kor;
+    font-family: 'DoHyeon-Regular', sans-serif;
     vertical-align: middle;
     padding-left: 10px;
 }
@@ -454,7 +451,7 @@ a.nav-link {
 
 #favorite ul li span {
     display: table-cell;
-    font-family: Moebius_Bold_kor;
+    font-family: 'DoHyeon-Regular', sans-serif;
     vertical-align: middle;
     padding-left: 10px;
 }
@@ -515,7 +512,7 @@ a.nav-link {
     padding-left: 20px;
     padding-top: 20px;
     font-size: 19px;
-    font-family: Moebius_Regular_kor;
+    font-family: 'DoHyeon-Regular', sans-serif;
 }
 
 .popup .pop_body {
@@ -525,7 +522,7 @@ a.nav-link {
     text-align: left;
     border-bottom: 1px solid #e9ecef;
 
-    font-family: Moebius_Regular_kor;
+    font-family: 'DoHyeon-Regular', sans-serif;
     font-size: 16px;
 }
 
@@ -589,7 +586,7 @@ a.nav-link {
     height: 49px;
     border-width: 0;
     border-radius: 0;
-    font-family: Moebius_Bold_kor;
+    font-family: 'DoHyeon-Regular', sans-serif;
     color: #A1A4AF;
 
     text-align: left;
@@ -610,7 +607,7 @@ a.nav-link {
     background-color: #DDDDDD;
     color: #2B3A52;
 
-    font-family: Moebius_Bold_kor;
+    font-family: 'DoHyeon-Regular', sans-serif;
     right: 0;
 
     text-align: right;
@@ -659,7 +656,7 @@ a.nav-link {
     padding-left: 20px;
     padding-top: 20px;
     font-size: 19px;
-    font-family: Moebius_Regular_kor;
+    font-family: 'DoHyeon-Regular', sans-serif;
 }
 
 .credit_body {
@@ -690,7 +687,7 @@ a.nav-link {
     border-width: 0;
     border-radius: 0;
     background-color: #2B3A52;
-    font-family: Moebius_Bold_kor;
+    font-family: 'DoHyeon-Regular', sans-serif;
     right: 0;
     bottom: -1px;
     text-align: center;
@@ -780,7 +777,7 @@ a.nav-link {
     left: calc( 50% - 27px );
     top: calc( 50% - -8px );
     color: lightgreen;
-    font-family: Moebius_Bold_kor;
+    font-family: 'DoHyeon-Regular', sans-serif;
     animation: loadingText 1s cubic-bezier(0.4, 0, 1, 1) infinite;
 }
 @keyframes loadingText {
@@ -813,7 +810,7 @@ a.nav-link {
     background: rgba(51,255,51,1);
     color: white;
 
-    font-family: Moebius_Bold_kor;
+    font-family: 'DoHyeon-Regular', sans-serif;
     line-height: 40px;
     animation: bubbleUp 0.75s ease-out;
 }
@@ -866,7 +863,7 @@ a.nav-link {
     background: rgba(255, 51, 51, 1);
     color: white;
 
-    font-family: Moebius_Bold_kor;
+    font-family: 'DoHyeon-Regular', sans-serif;
     line-height: 40px;
     animation: bubbleUp2 0.75s ease-out;
 }
@@ -943,7 +940,7 @@ a.nav-link {
     margin-right: auto;
     left: calc( 50% - 27px );
     top: calc(50% - -65px);
-    font-family: Moebius_Bold_kor;
+    font-family: 'DoHyeon-Regular', sans-serif;
 }
 
 @keyframes hoverText {
@@ -986,6 +983,8 @@ a.nav-link {
 }
 
 .hoverLamp2_back span {
+    width: 88px;
+    height: 100px;
     opacity: 0;
     display: block;
     z-index: 2001;
@@ -993,9 +992,9 @@ a.nav-link {
     margin-left: auto;
     margin-right: auto;
     position: absolute !important;
-    left: calc(50% - 45px);
-    top: calc(50% - -53px);
-    font-family: Moebius_Bold_kor;
+    left: calc(50% - 50px);
+    top: calc(50% - -23px);
+    font-family: 'DoHyeon-Regular', sans-serif;
 }
 .hoverLamp2_back:hover span {
     display: block;
@@ -1007,7 +1006,7 @@ a.nav-link {
     left: calc(50% - 45px);
     top: calc(50% - -53px);
     color: #4bcc4b;
-    font-family: Moebius_Bold_kor;
+    font-family: 'DoHyeon-Regular', sans-serif;
     animation: hoverText 1.5s cubic-bezier(0.4, 0, 1, 1) infinite;
 }
 
@@ -1031,7 +1030,7 @@ img[src='/img/li_cancel.png']:hover, #footer_str:hover{
 img[src="/img/plus.png"] {
     /* display: none; */
     position: absolute;
-    left: 189px;
+    left: 201px;
     top: 4px;
     width: 32px;
     height: 32px;
@@ -1074,7 +1073,7 @@ img[src="/img/plus.png"]:hover {
     padding-left: 20px;
     padding-top: 20px;
     font-size: 19px;
-    font-family: Moebius_Regular_kor;
+    font-family: 'DoHyeon-Regular', sans-serif;
 }
 .pop_favorite_header span {
     color: #F4A966;
@@ -1088,7 +1087,7 @@ img[src="/img/plus.png"]:hover {
     text-align: left;
     border-bottom: 1px solid #e9ecef;
 
-    font-family: Moebius_Regular_kor;
+    font-family: 'DoHyeon-Regular', sans-serif;
     font-size: 16px;
 }
 
@@ -1157,7 +1156,7 @@ img[src="/img/plus.png"]:hover {
     height: 49px;
     border-width: 0;
     border-radius: 0;
-    font-family: Moebius_Bold_kor;
+    font-family: 'DoHyeon-Regular', sans-serif;
     color: #A1A4AF;
 
     text-align: left;
@@ -1178,7 +1177,7 @@ img[src="/img/plus.png"]:hover {
     background-color: #DDDDDD;
     color: #F4A966;
 
-    font-family: Moebius_Bold_kor;
+    font-family: 'DoHyeon-Regular', sans-serif;
     right: 0;
 
     text-align: right;
@@ -1300,7 +1299,7 @@ img[src="/img/plus.png"]:hover {
     width: auto;
     height: auto;
     color: #fff;
-    font-family: Moebius_Bold_kor;
+    font-family: 'DoHyeon-Regular', sans-serif;
     text-align: center;
     line-height: 100%;
     font-size: 44px;
@@ -1331,7 +1330,7 @@ img[src='/img/home_btn.png']{
     width: auto;
     height: auto;
     color: #fff;
-    font-family: Moebius_Regular_kor;
+    font-family: 'DoHyeon-Regular', sans-serif;
     text-align: right;
     line-height: 130%;
     font-size: 14px;
@@ -1364,7 +1363,7 @@ img[src='/img/bulb_btn.png']{
     width: auto;
     height: auto;
     color: #fff;
-    font-family: Moebius_Regular_kor;
+    font-family: 'DoHyeon-Regular', sans-serif;
     text-align: right;
     line-height: 130%;
     font-size: 14px;
@@ -1396,7 +1395,7 @@ img[src='/img/title_btn.png']{
     width: auto;
     height: auto;
     color: #fff;
-    font-family: Moebius_Regular_kor;
+    font-family: 'DoHyeon-Regular', sans-serif;
     text-align: center;
     line-height: 100%;
     font-size: 14px;
@@ -1428,7 +1427,7 @@ img[src='/img/web_btn.png']{
     width: auto;
     height: auto;
     color: #fff;
-    font-family: Moebius_Regular_kor;
+    font-family: 'DoHyeon-Regular', sans-serif;
     text-align: right;
     line-height: 130%;
     font-size: 14px;
@@ -1460,7 +1459,7 @@ img[src='/img/local_btn.png']{
     width: auto;
     height: auto;
     color: #fff;
-    font-family: Moebius_Regular_kor;
+    font-family: 'DoHyeon-Regular', sans-serif;
     text-align: right;
     line-height: 130%;
     font-size: 14px;
@@ -1492,7 +1491,7 @@ img[src='/img/recent_btn.png']{
     width: auto;
     height: auto;
     color: white;
-    font-family: Moebius_Regular_kor;
+    font-family: 'DoHyeon-Regular', sans-serif;
     text-align: left;
     line-height: 130%;
     font-size:14px;
@@ -1512,7 +1511,7 @@ img[src='/img/fav_btn.png']{
     width: auto;
     height: auto;
     color: white;
-    font-family: Moebius_Regular_kor;
+    font-family: 'DoHyeon-Regular', sans-serif;
     text-align: left;
     line-height: 130%;
     font-size:14px;
@@ -1526,7 +1525,7 @@ img[src='/img/fav_btn.png']{
     width: auto;
     height: auto;
     color: white;
-    font-family: Moebius_Regular_kor;
+    font-family: 'DoHyeon-Regular', sans-serif;
     text-align: center;
     line-height: 130%;
     font-size:14px;
@@ -1576,7 +1575,7 @@ img[src='/img/credit_btn.png']{
     height: auto;
     font-size: 17px !important;
     color: #fff;
-    font-family: Moebius_Regular_kor;
+    font-family: 'DoHyeon-Regular', sans-serif;
     text-align: center;
     line-height: 100%;
     font-size: 14px;
@@ -1644,3 +1643,7 @@ img[src='/img/pdfast6.png'], #title{
     line-height: 15px; 
 }
 
+#funcframe div ul li a {
+    text-align: center;
+    width: 90px;
+}

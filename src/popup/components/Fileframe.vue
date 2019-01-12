@@ -26,7 +26,7 @@ export default {
                 display: 'table',
                 zIndex: '10',
                 overFlow: 'hidden',
-                fontFamily: 'Moebius_Bold_kor',
+                fontFamily: 'DoHyeon-Regular',
                 fontSize: '20px'
             },
             styleDefaultOut: {
@@ -44,7 +44,7 @@ export default {
                 height: '20px',
                 borderBottom: '0px',
                 borderTop: '1px solid #C4C2C0',
-                fontFamily: 'Moebius_Bold_kor',
+                fontFamily: 'DoHyeon-Regular',
                 fontSize: '20px',
                 display: 'table',
 
@@ -73,7 +73,7 @@ export default {
                 height: '20px',
                 borderBottom: '0px',
                 borderTop: '1px solid #C4C2C0',
-                fontFamily: 'Moebius_Bold_kor',
+                fontFamily: 'DoHyeon-Regular',
                 fontSize: '20px',
                 display: 'table',
 

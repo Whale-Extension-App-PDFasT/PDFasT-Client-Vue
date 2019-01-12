@@ -9,7 +9,7 @@
             <a id="title">PDFasT</a>
             <span id="lamp_light" class="lamp_light"></span>
             <span id="lamp_back" class="lamp_back_off"></span>
-            <img class="lamp" src="/img/lamp_on.png" />
+            <img class="lamp" src="/img/lamp_off.png" />
         </div>
     </div>
 </template>
@@ -28,9 +28,7 @@ export default {
     Bubble_success,
     Bubble_fail,
     HoverLamp
-  },
-  data(){
-  },
+  }
 }
 </script>
 
