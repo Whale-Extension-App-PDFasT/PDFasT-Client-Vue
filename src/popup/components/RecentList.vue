@@ -30,10 +30,16 @@
               />
             </svg>
           </div>
-          <div class="w-11/12 py-3 px-1">
+          <div class="w-10/12 py-3 px-1">
             <p class="pdf-item__text" v-on:click="convert(item, $event)">{{ item.title }}</p>
           </div>
-          <div class="w-1/12 py-3 px-1">
+          <div class="w-2/12 py-3 px-1 flex flex-row items-center">
+            <sl-rating
+              class="ml-auto mr-4"
+              max="1"
+              v-bind:value="isFavorite(item)"
+              v-on:click="setFavorite(item, $event)"
+            ></sl-rating>
             <acc-button
               class="close-btn"
               type="text"
@@ -225,6 +231,57 @@ export default {
       })
       localStorage.setItem('2', JSON.stringify(this.favoriteList))
       EventBus.$emit('updatedFavorite')
+    },
+    isFavorite(pdf) {
+      const favoriteList = JSON.parse(localStorage.getItem('2')) || []
+      return favoriteList.findIndex(item => item.url === pdf.url) !== -1 ? 1 : 0
+    },
+    setFavorite(pdfInfo, event) {
+      const target = event.target
+      const isFavoritePdf = target.value
+      if (isFavoritePdf) {
+        if (!localStorage) {
+          return
+        }
+        let favoriteList = JSON.parse(localStorage.getItem('2')) || []
+
+        favoriteList = [
+          {
+            title: pdfInfo.title,
+            url: pdfInfo.url
+          },
+          ...favoriteList
+        ]
+
+        localStorage.setItem('2', JSON.stringify(favoriteList))
+        EventBus.$emit('updatedFavoriteList')
+      } else {
+        if (!localStorage) {
+          return
+        }
+        const remove = (arr, func) =>
+          Array.isArray(arr)
+            ? arr.filter(func).reduce((acc, val) => {
+                arr.splice(arr.indexOf(val), 1)
+                return acc.concat(val)
+              }, [])
+            : []
+        let favoriteList = JSON.parse(localStorage.getItem('2')) || []
+
+        favoriteList = [
+          {
+            title: pdfInfo.title,
+            url: pdfInfo.url
+          },
+          ...favoriteList
+        ]
+        favoriteList = remove(favoriteList, _pdfInfo => {
+          return _pdfInfo.url !== pdfInfo.url
+        })
+
+        localStorage.setItem('2', JSON.stringify(favoriteList))
+        EventBus.$emit('updatedFavoriteList')
+      }
     }
   }
 }
