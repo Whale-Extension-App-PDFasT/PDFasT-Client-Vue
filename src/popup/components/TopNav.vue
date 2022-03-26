@@ -45,8 +45,7 @@ export default {
       window.open('https://youtu.be/mr2Llu8ZKeU', 'PDFasT 가이드 영상')
     },
     help() {
-      localStorage && localStorage.removeItem('tutorial')
-      location.reload()
+      this.$tours['tutorial'].start()
     }
   }
 }

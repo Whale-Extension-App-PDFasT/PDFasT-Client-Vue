@@ -49,7 +49,6 @@ export default {
       },
       steps: [
         {
-          target: '#pdf-wrap',
           header: {
             title: whale.i18n.getMessage('TUTORIAL_FIRST_TITLE')
           },
