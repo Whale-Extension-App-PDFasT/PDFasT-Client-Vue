@@ -1,59 +1,101 @@
 {
-    "APP_NAME": {
-      "message": "PDFasT"
-    },
-    "APP_DESCRIPTION": {
-      "message": "PDF에서도 번역,메모,검색 등 퀵서치가 가능한 확장앱"
-    },
-    "AD_YOUTUBE": {
-      "message": "PDFasT 사용법 영상"
-    },
-    "HELP_CLOSE": {
-      "message": "가이드 영상 닫고 바로 시작하기!"
-    },
-    "GUIDE_INIT": {
-      "message": "하단에 아이콘을 클릭해보세요!"
-    },
-    "GUIDE_WEB": {
-      "message": "인터넷에서 PDF 변환 중..."
-    },
-    "GUIDE_LOCAL": {
-      "message": "내 컴퓨터에서 PDF 변환 중..."
-    },
-    "BULB_HOVER": {
-      "message": "변환된 모든탭<br/>닫기"
-    },
-    "MENU_RECENT": {
-      "message": "최근항목"
-    },
-    "MENU_FAVORITE": {
-      "message": "즐겨찾기"
-    },
-    "CLOSE": {
-      "message": "닫기"
-    },
-    "WEB_POPUP_TITLE": {
-      "message": "변환할 탭 목록"
-    },
-    "WEB_POPUP_CONTENT": {
-      "message": "현재 브라우저에 PDF가 없습니다."
-    },
-    "WEB_POPUP_CONVERT": {
-      "message": "변환"
-    },
-    "WEB_POPUP_CANCEL": {
-      "message": "취소"
-    },
-    "FAVORITE_POPUP_TITLE": {
-      "message": "<span>즐겨찾기</span> 추가할 탭 목록"
-    },
-    "FAVORITE_POPUP_CONTENT": {
-      "message": "현재 브라우저에 PDF가 없습니다."
-    },
-    "FAVORITE_POPUP_ADD": {
-      "message": "추가"
-    },
-    "FAVORITE_POPUP_CANCEL": {
-      "message": "취소"
-    }
+  "APP_NAME": {
+    "message": "PDFasT"
+  },
+  "APP_DESCRIPTION": {
+    "message": "PDF에서도 번역,메모,검색 등 퀵서치가 가능한 확장앱"
+  },
+  "AD_YOUTUBE": {
+    "message": "PDFasT 사용법 영상"
+  },
+  "HELP_CLOSE": {
+    "message": "가이드 영상 닫고 바로 시작하기!"
+  },
+  "GUIDE_INIT": {
+    "message": "하단에 아이콘을 클릭해보세요!"
+  },
+  "GUIDE_WEB": {
+    "message": "인터넷에서 PDF 변환 중..."
+  },
+  "GUIDE_LOCAL": {
+    "message": "내 컴퓨터에서 PDF 변환 중..."
+  },
+  "BULB_HOVER": {
+    "message": "변환된 모든탭<br/>닫기"
+  },
+  "MENU_RECENT": {
+    "message": "최근항목"
+  },
+  "MENU_FAVORITE": {
+    "message": "즐겨찾기"
+  },
+  "CLOSE": {
+    "message": "닫기"
+  },
+  "WEB_POPUP_TITLE": {
+    "message": "변환할 탭 목록"
+  },
+  "WEB_POPUP_CONTENT": {
+    "message": "현재 브라우저에 PDF가 없습니다."
+  },
+  "WEB_POPUP_CONVERT": {
+    "message": "변환"
+  },
+  "WEB_POPUP_CANCEL": {
+    "message": "취소"
+  },
+  "FAVORITE_POPUP_TITLE": {
+    "message": "<span>즐겨찾기</span> 추가할 탭 목록"
+  },
+  "NOT_FOUND_PDF": {
+    "message": "현재 브라우저에 열린 PDF가 없습니다."
+  },
+  "FAVORITE_POPUP_ADD": {
+    "message": "추가"
+  },
+  "FAVORITE_POPUP_CANCEL": {
+    "message": "취소"
+  },
+  "GUIDE_VIDEO": {
+    "message": "가이드 영상"
+  },
+  "PDF_CONVERT_LIST": {
+    "message": "브라우저에서 열린 PDF 번역하기"
+  },
+  "TRANSLATE_PDF_LOCAL": {
+    "message": "사용자 컴퓨터에서 PDF 번역하기"
+  },
+  "NOT_FOUND_RECENT_LIST": {
+    "message": "최근에 열린 PDF가 없습니다."
+  },
+  "NOT_FOUND_FAVORITE_LIST": {
+    "message": "저장된 즐겨찾기가 없습니다."
+  },
+  "PREVIOUS": {
+    "message": "이전"
+  },
+  "NEXT": {
+    "message": "다음"
+  },
+  "FINISH": {
+    "message": "끝내기"
+  },
+  "TUTORIAL_SKIP": {
+    "message": "건너띄기"
+  },
+  "TUTORIAL_FIRST_TITLE": {
+    "message": "1. 번역할 PDF 선택하기"
+  },
+  "TUTORIAL_FIRST_TEXT": {
+    "message": "브라우저에서 열린 PDF를 선택하거나 사용자 컴퓨터에 저장되어있는 PDF를 선택하세요."
+  },
+  "TUTORIAL_SECOND_TITLE": {
+    "message": "2. PDF 번역하기"
+  },
+  "TUTORIAL_SECOND_TEXT": {
+    "message": "PDF가 변환되었다면 텍스트를 드래그하여 번역하세요."
+  },
+  "THANKYOU": {
+    "message": "감사합니다."
   }
+}

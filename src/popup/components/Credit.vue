@@ -1,11 +1,9 @@
 <template>
-    <div class="credit_back modal" v-bind:style="{display: creditDisplay}">
-        <div class="credit">
-            <div class="credit_header">
-                Credit
-            </div>
-            <div class="credit_body">
-<pre>
+  <div class="credit_back modal" v-bind:style="{ display: creditDisplay }">
+    <div class="credit">
+      <div class="credit_header">Licenes</div>
+      <div class="credit_body">
+        <pre>
 - Developers-
 =========================================================
 PDFasT (pdfast@naver.com)
@@ -226,42 +224,48 @@ Icon made by Katarina Stefanikova from www.flaticon.com
 
 Icon made by Google from www.flaticon.com
 =========================================================
-</pre>
-            </div>
-            <div class="credit_footer">
-                <button type="button" id="creditCancel" class="btn btn-default" v-on:click="close" i18n-content="CLOSE"></button>                
-            </div>
-        </div>
+</pre
+        >
+      </div>
+      <div class="credit_footer">
+        <acc-button
+          size="large"
+          type="success"
+          id="creditCancel"
+          class="w-full m-4"
+          v-on:click="close"
+          i18n-content="CLOSE"
+        ></acc-button>
+      </div>
     </div>
+  </div>
 </template>
 
 <script>
 /* eslint-disable */
-import { EventBus } from "./../index.js"
+import { EventBus } from './../index.js'
 export default {
   name: 'Credit',
-  data(){
-    return{
-      creditDisplay: 'none',
+  data() {
+    return {
+      creditDisplay: 'none'
     }
   },
   methods: {
-      close: () => {
-          EventBus.$emit('closeCredit');
-      }
+    close: () => {
+      EventBus.$emit('closeCredit')
+    }
   },
-  created(){
+  created() {
     EventBus.$on('closeCredit', () => {
-      this.creditDisplay = 'none';
-    });
+      this.creditDisplay = 'none'
+    })
     EventBus.$on('showCredit', () => {
-      this.creditDisplay = 'block';
-    });
+      this.creditDisplay = 'block'
+    })
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-
-</style>
+<style scoped></style>

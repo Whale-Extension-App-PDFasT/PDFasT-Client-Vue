@@ -47,7 +47,7 @@
   "FAVORITE_POPUP_TITLE": {
     "message": "<span>FAVORITE</span> List of tabs to add"
   },
-  "FAVORITE_POPUP_CONTENT": {
+  "NOT_FOUND_PDF": {
     "message": "There are no PDF files in the current browser"
   },
   "FAVORITE_POPUP_ADD": {
@@ -55,5 +55,47 @@
   },
   "FAVORITE_POPUP_CANCEL": {
     "message": "CANCEL"
+  },
+  "GUIDE_VIDEO": {
+    "message": "GUIDE VIDEO"
+  },
+  "PDF_CONVERT_LIST": {
+    "message": "Translate browser PDF file"
+  },
+  "TRANSLATE_PDF_LOCAL": {
+    "message": "Translate local PDF file"
+  },
+  "NOT_FOUND_RECENT_LIST": {
+    "message": "No Recents"
+  },
+  "NOT_FOUND_FAVORITE_LIST": {
+    "message": "No Favorites"
+  },
+  "PREVIOUS": {
+    "message": "Previous"
+  },
+  "NEXT": {
+    "message": "Next"
+  },
+  "FINISH": {
+    "message": "Finish"
+  },
+  "TUTORIAL_SKIP": {
+    "message": "Skip"
+  },
+  "TUTORIAL_FIRST_TITLE": {
+    "message": "Get Started!"
+  },
+  "TUTORIAL_FIRST_TEXT": {
+    "message": "1. Select a pdf file in web or local"
+  },
+  "TUTORIAL_SECOND_TITLE": {
+    "message": "Get Started!"
+  },
+  "TUTORIAL_SECOND_TEXT": {
+    "message": "2. Drag and translate"
+  },
+  "THANKYOU": {
+    "message": "THANK YOU"
   }
 }
